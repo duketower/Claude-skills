@@ -38,7 +38,11 @@
  *   (none yet — add to scraping/ folder)
  *
  * WEB
- *   (none yet — add to web/ folder)
+ *   initScrollReveal      — Scroll-triggered animations with stagger (IntersectionObserver)
+ *   animateCounter        — Animate a number from 0 to target with ease-out cubic
+ *   initCounters          — Set up scroll-triggered counters across the page
+ *   initFaqAccordion      — Accessible FAQ accordion (aria-expanded, one open at a time)
+ *   initBeforeAfterSlider — Drag/touch before-and-after image comparison slider
  *
  * AI
  *   (none yet — add to ai/ folder)

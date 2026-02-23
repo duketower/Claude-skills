@@ -21,14 +21,21 @@
  */
 
 // --- Exports ---
-// Uncomment and add as skills are built:
 
+const { initScrollReveal }             = require('./scrollReveal');
+const { animateCounter, initCounters } = require('./animateCounter');
+const { initFaqAccordion }             = require('./faqAccordion');
+const { initBeforeAfterSlider }        = require('./beforeAfterSlider');
+
+// Planned (not yet added):
 // const { fetchWithRetry } = require('./fetchWithRetry');
-// const { validateForm } = require('./validateForm');
-// const { showToast } = require('./showToast');
+// const { validateForm }   = require('./validateForm');
+// const { showToast }      = require('./showToast');
 
 module.exports = {
-  // fetchWithRetry,
-  // validateForm,
-  // showToast,
+  initScrollReveal,
+  animateCounter,
+  initCounters,
+  initFaqAccordion,
+  initBeforeAfterSlider,
 };
