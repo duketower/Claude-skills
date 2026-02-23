@@ -34,6 +34,8 @@ const { animateNumber }                                                         
 const { validateForm, showError, clearErrors,
         initLiveValidation }                                                    = require('./formValidation');
 
+const { initPortfolioFilter }                                                   = require('./portfolioFilter');
+
 // Planned (not yet added):
 // const { fetchWithRetry } = require('./fetchWithRetry');
 // const { showToast }      = require('./showToast');
@@ -48,6 +50,7 @@ module.exports = {
   // UI components
   initFaqAccordion,
   initBeforeAfterSlider,
+  initPortfolioFilter,
 
   // Navbar utilities
   initNavbarScroll,

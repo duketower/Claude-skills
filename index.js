@@ -44,6 +44,7 @@
  *   animateNumber         — Animate between two values instantly (e.g. pricing calculators)
  *   initFaqAccordion      — Accessible FAQ accordion (aria-expanded, one open at a time)
  *   initBeforeAfterSlider — Drag/touch before-and-after image comparison slider
+ *   initPortfolioFilter   — Filter portfolio/gallery cards by data-category attribute
  *   initNavbarScroll      — Add/remove .scrolled class on navbar after threshold px
  *   initHamburgerMenu     — Mobile hamburger toggle with body-scroll lock
  *   initDropdownNav       — Desktop hover + mobile click dropdowns with close delay
