@@ -35,6 +35,7 @@ const { validateForm, showError, clearErrors,
         initLiveValidation }                                                    = require('./formValidation');
 
 const { initPortfolioFilter }                                                   = require('./portfolioFilter');
+const { initLightbox }                                                          = require('./lightbox');
 
 // Planned (not yet added):
 // const { fetchWithRetry } = require('./fetchWithRetry');
@@ -51,6 +52,7 @@ module.exports = {
   initFaqAccordion,
   initBeforeAfterSlider,
   initPortfolioFilter,
+  initLightbox,
 
   // Navbar utilities
   initNavbarScroll,
