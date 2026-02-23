@@ -41,8 +41,14 @@
  *   initScrollReveal      — Scroll-triggered animations with stagger (IntersectionObserver)
  *   animateCounter        — Animate a number from 0 to target with ease-out cubic
  *   initCounters          — Set up scroll-triggered counters across the page
+ *   animateNumber         — Animate between two values instantly (e.g. pricing calculators)
  *   initFaqAccordion      — Accessible FAQ accordion (aria-expanded, one open at a time)
  *   initBeforeAfterSlider — Drag/touch before-and-after image comparison slider
+ *   initNavbarScroll      — Add/remove .scrolled class on navbar after threshold px
+ *   initHamburgerMenu     — Mobile hamburger toggle with body-scroll lock
+ *   initDropdownNav       — Desktop hover + mobile click dropdowns with close delay
+ *   initActiveNavOnScroll — Highlight nav link for the section currently in view
+ *   initSmoothScroll      — Smooth anchor-link scrolling with navbar offset
  *
  * AI
  *   (none yet — add to ai/ folder)

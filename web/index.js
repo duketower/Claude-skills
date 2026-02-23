@@ -22,10 +22,14 @@
 
 // --- Exports ---
 
-const { initScrollReveal }             = require('./scrollReveal');
-const { animateCounter, initCounters } = require('./animateCounter');
-const { initFaqAccordion }             = require('./faqAccordion');
-const { initBeforeAfterSlider }        = require('./beforeAfterSlider');
+const { initScrollReveal }                                                      = require('./scrollReveal');
+const { animateCounter, initCounters }                                          = require('./animateCounter');
+const { initFaqAccordion }                                                      = require('./faqAccordion');
+const { initBeforeAfterSlider }                                                 = require('./beforeAfterSlider');
+const { initNavbarScroll, initHamburgerMenu, initDropdownNav,
+        initActiveNavOnScroll }                                                 = require('./navbarUtils');
+const { initSmoothScroll }                                                      = require('./smoothScroll');
+const { animateNumber }                                                         = require('./animateNumber');
 
 // Planned (not yet added):
 // const { fetchWithRetry } = require('./fetchWithRetry');
@@ -33,9 +37,22 @@ const { initBeforeAfterSlider }        = require('./beforeAfterSlider');
 // const { showToast }      = require('./showToast');
 
 module.exports = {
+  // Scroll & animation
   initScrollReveal,
   animateCounter,
   initCounters,
+  animateNumber,
+
+  // UI components
   initFaqAccordion,
   initBeforeAfterSlider,
+
+  // Navbar utilities
+  initNavbarScroll,
+  initHamburgerMenu,
+  initDropdownNav,
+  initActiveNavOnScroll,
+
+  // Navigation
+  initSmoothScroll,
 };
