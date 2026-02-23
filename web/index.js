@@ -31,9 +31,11 @@ const { initNavbarScroll, initHamburgerMenu, initDropdownNav,
 const { initSmoothScroll }                                                      = require('./smoothScroll');
 const { animateNumber }                                                         = require('./animateNumber');
 
+const { validateForm, showError, clearErrors,
+        initLiveValidation }                                                    = require('./formValidation');
+
 // Planned (not yet added):
 // const { fetchWithRetry } = require('./fetchWithRetry');
-// const { validateForm }   = require('./validateForm');
 // const { showToast }      = require('./showToast');
 
 module.exports = {
@@ -55,4 +57,10 @@ module.exports = {
 
   // Navigation
   initSmoothScroll,
+
+  // Forms
+  validateForm,
+  showError,
+  clearErrors,
+  initLiveValidation,
 };

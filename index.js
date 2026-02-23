@@ -49,12 +49,28 @@
  *   initDropdownNav       — Desktop hover + mobile click dropdowns with close delay
  *   initActiveNavOnScroll — Highlight nav link for the section currently in view
  *   initSmoothScroll      — Smooth anchor-link scrolling with navbar offset
+ *   validateForm          — Validate form fields against rules, returns errors object
+ *   showError             — Inject inline error message below a form field
+ *   clearErrors           — Remove all inline errors from a form
+ *   initLiveValidation    — Clear field errors as user types/selects
  *
  * AI
- *   (none yet — add to ai/ folder)
+ *   whatsappOutreach    — Cold WhatsApp message prompt for local business outreach
+ *   emailOutreach       — Cold email prompt with subject line
+ *   websiteCopy         — Hero + about + services copy prompt for client websites
+ *   followUpMessage     — Follow-up message prompt after no response
+ *   testimonialRequest  — Prompt to ask happy clients for a Google review
+ *   proposalEmail       — Project proposal email prompt with pricing
  *
  * UTILS
- *   (none yet — add to utils/ folder)
+ *   formatRupee         — ₹1,49,999 Indian Rupee formatting (en-IN locale)
+ *   formatNumber        — en-IN number formatting with Indian comma grouping
+ *   formatDate          — Human-readable Indian date (long / short / numeric)
+ *   formatPhone         — +91 73990 06699 display format for Indian mobiles
+ *   formatGST           — GSTIN display formatting
+ *   slugify             — "Hello World!" → "hello-world"
+ *   truncate            — Truncate string with ellipsis
+ *   capitalize          — Title-case a string
  *
  * EXPERIMENTS
  *   (sandbox only — nothing exported)

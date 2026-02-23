@@ -21,14 +21,23 @@
  */
 
 // --- Exports ---
-// Uncomment and add as skills are built:
 
-// const { callClaude } = require('./callClaude');
-// const { extractJSON } = require('./extractJSON');
-// const { buildSystemPrompt } = require('./buildSystemPrompt');
+const {
+  whatsappOutreach, emailOutreach, websiteCopy,
+  followUpMessage, testimonialRequest, proposalEmail,
+} = require('./outreachPrompts');
+
+// Planned (not yet added):
+// const { callClaude }         = require('./callClaude');
+// const { extractJSON }        = require('./extractJSON');
+// const { buildSystemPrompt }  = require('./buildSystemPrompt');
 
 module.exports = {
-  // callClaude,
-  // extractJSON,
-  // buildSystemPrompt,
+  // Outreach prompt templates
+  whatsappOutreach,
+  emailOutreach,
+  websiteCopy,
+  followUpMessage,
+  testimonialRequest,
+  proposalEmail,
 };

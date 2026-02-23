@@ -20,20 +20,28 @@
  */
 
 // --- Exports ---
-// Uncomment and add as skills are built:
 
-// const { slugify } = require('./stringHelpers');
+const {
+  formatRupee, formatNumber, formatDate,
+  formatPhone, formatGST, slugify, truncate, capitalize,
+} = require('./formatters');
+
+// Planned (not yet added):
 // const { groupBy, chunk } = require('./arrayHelpers');
 // const { readJSON, writeJSON } = require('./fileHelpers');
 // const { requireEnv } = require('./envHelpers');
 // const { log } = require('./logger');
 
 module.exports = {
-  // slugify,
-  // groupBy,
-  // chunk,
-  // readJSON,
-  // writeJSON,
-  // requireEnv,
-  // log,
+  // Indian formatters
+  formatRupee,
+  formatNumber,
+  formatDate,
+  formatPhone,
+  formatGST,
+
+  // String helpers
+  slugify,
+  truncate,
+  capitalize,
 };
