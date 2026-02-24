@@ -1,52 +1,100 @@
 # Claude Skills Library
 
-A personal, reusable skills library built alongside Claude Code projects.
-Every time something useful gets built, it lives here — ready to be referenced
-in any future project without starting from scratch.
+A personal skills library built alongside Claude Code projects.
+Single source of truth: **https://github.com/duketower/Claude-skills**
 
 ---
 
-## Structure
+## Two Types of Resources
+
+This repo holds two distinct types of skills:
+
+### 1. Claude Code Skills (`skills/`)
+`SKILL.md` files that install into Claude Code and change how Claude behaves.
+Auto-invoked when the situation matches — no slash command needed.
+
+```bash
+# Install a skill globally
+cp -r skills/dev-workflow/brainstorming ~/.claude/skills/brainstorming
+
+# Install all SEO skills
+cp -r skills/seo/. ~/.claude/skills/
+```
+
+→ See [skills/README.md](skills/README.md) for the full catalog (55 skills across 8 categories)
+
+---
+
+### 2. Code Utilities (`web/`, `ai/`, `utils/`, `automation/`, `scraping/`)
+Reusable JS functions, HTML/CSS patterns, and knowledge files to copy into projects.
+
+```js
+// Example: copy animateCounter.js into your project
+import { animateCounter } from './shared/animateCounter.js';
+```
+
+---
+
+## Skills Catalog (Quick Reference)
+
+| Category | Count | Examples |
+|----------|-------|---------|
+| **Dev Workflow** | 14 | brainstorming, TDD, writing-plans, debugging, code review |
+| **Design** | 5 | frontend-design, frontend-ui-ux-engineer, landing-page-builder |
+| **SEO** | 6 | seo-geo, local-seo, search-console, bing-webmaster |
+| **Analytics** | 5 | google-analytics, marketing-analytics, retention-analytics |
+| **CRO** | 4 | page-cro, popup-cro, signup-flow-cro, ab-testing |
+| **Content** | 5 | content-strategy, copywriting, social-media-kit, email-sequence |
+| **Paid Growth** | 6 | paid-ads, cold-outreach, growth-hacking, affiliate-marketing |
+| **Sales Ops** | 7 | crm-builder, lead-scoring, sales-funnel, pricing-optimization |
+| **Misc** | 3 | ascii-banner, smart-contract-auditor, find-skills |
+
+---
+
+## Code Utilities Catalog
+
+| Folder | What's Inside |
+|--------|--------------|
+| [web/](web/) | 10 JS utilities (navbar, scroll, counter, lightbox, FAQ, gallery, etc.) |
+| [web/verticals/](web/verticals/) | Website knowledge base for 4 industries (education, medical, corporate, small business) |
+| [web/docs/](web/docs/) | Client intake form + project brief template |
+| [ai/](ai/) | Outreach prompts (WhatsApp, email, testimonial request, proposal) |
+| [utils/](utils/) | Indian formatting helpers (₹, dates, phone, GST, slugify) |
+
+---
+
+## Folder Structure
 
 ```
 claude-skills/
-├── automation/     # n8n helpers, workflow utilities, task runners
-├── scraping/       # Scraper functions, parsers, data extraction patterns
-├── web/            # Website components, templates, UI snippets
-├── ai/             # Prompts, agent logic, tool definitions, chains
-├── utils/          # General-purpose helpers used across projects
-├── experiments/    # Work-in-progress ideas and prototypes
-└── index.js        # Master registry — all skills documented here
+├── skills/                 ← Claude Code SKILL.md files (55 total)
+│   ├── dev-workflow/       ← superpowers: brainstorming, TDD, planning, debugging
+│   ├── design/             ← UI creation and review
+│   ├── seo/                ← Search optimization
+│   ├── analytics/          ← Measurement and data
+│   ├── cro/                ← Conversion optimization
+│   ├── content/            ← Content and social media
+│   ├── paid-growth/        ← Paid acquisition and outreach
+│   ├── sales-ops/          ← CRM, sales, revenue
+│   └── misc/               ← Niche utilities
+├── web/                    ← JS code utilities + verticals + client docs
+├── ai/                     ← AI prompt templates
+├── utils/                  ← General formatting helpers
+├── automation/             ← (planned: n8n patterns)
+└── scraping/               ← (planned: scraper patterns)
 ```
-
----
-
-## How to Use This Library
-
-1. **Browse by category** — each subfolder has its own README explaining what's inside
-2. **Copy what you need** — skills are designed to be standalone and portable
-3. **Reference in Claude Code** — point Claude at this repo for context on available tools
-4. **Add new skills** — when you build something reusable, drop it in the right folder
-
----
-
-## Adding a New Skill
-
-1. Put the file in the right subfolder (`automation/`, `scraping/`, etc.)
-2. Add a header comment explaining what it does and how to use it
-3. Export it from the subfolder's `index.js`
-4. Register it in the root `index.js` with a short description
 
 ---
 
 ## Projects Using This Library
 
 | Project | Skills Used |
-|---|---|
-| Data Scraping | `scraping/`, `utils/` |
-| Website Startup | `web/`, `ai/` |
+|---------|-------------|
+| PreSchool Website Builder | `web/`, `skills/dev-workflow/`, `skills/design/`, `web/verticals/` |
+| Website Startup | `skills/design/`, `skills/seo/`, `skills/cro/`, `skills/content/` |
 | n8n Builder | `automation/`, `utils/` |
+| Data Scraping | `scraping/`, `utils/` |
 
 ---
 
-*Built with Claude Code — growing over time as new patterns emerge.*
+*Built with Claude Code. Single source of truth on GitHub.*
