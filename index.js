@@ -28,7 +28,47 @@
  * 5. Add a one-line entry to the CATALOG comment above it
  *
  * ──────────────────────────────────────────────────────────────────
- * SKILL CATALOG
+ * ──────────────────────────────────────────────────────────────────
+ * CLAUDE CODE SKILLS (skills/ folder — SKILL.md files)
+ * ──────────────────────────────────────────────────────────────────
+ * Install: cp -r skills/<category>/<skill> ~/.claude/skills/<skill>
+ * See: skills/README.md for full catalog and overlap guide
+ *
+ * DEV WORKFLOW (14 skills — from obra/superpowers)
+ *   brainstorming, writing-plans, executing-plans, subagent-driven-development,
+ *   test-driven-development, systematic-debugging, verification-before-completion,
+ *   requesting-code-review, receiving-code-review, dispatching-parallel-agents,
+ *   using-git-worktrees, finishing-a-development-branch, writing-skills, using-superpowers
+ *
+ * DESIGN (5 skills)
+ *   frontend-design, frontend-ui-ux-engineer, web-design-guidelines,
+ *   awwwards-landing-page, landing-page-builder
+ *
+ * SEO (6 skills)
+ *   seo-geo, local-seo, search-console, bing-webmaster, yandex-webmaster, programmatic-seo
+ *
+ * ANALYTICS (5 skills)
+ *   google-analytics, marketing-analytics, data-analytics, data-management, retention-analytics
+ *
+ * CRO (4 skills)
+ *   page-cro, popup-cro, signup-flow-cro, ab-testing
+ *
+ * CONTENT (5 skills)
+ *   content-strategy, copywriting, social-media-growth, social-media-kit, email-sequence
+ *
+ * PAID GROWTH (6 skills)
+ *   paid-ads, cold-outreach, affiliate-marketing, growth-hacking,
+ *   customer-acquisition, business-development
+ *
+ * SALES OPS (7 skills)
+ *   crm-builder, crm-operations, lead-scoring, sales-funnel,
+ *   revenue-operations, pricing-optimization, accounting-finance
+ *
+ * MISC (3 skills)
+ *   ascii-banner, smart-contract-auditor, find-skills
+ *
+ * ──────────────────────────────────────────────────────────────────
+ * CODE UTILITIES (web/, ai/, utils/ folders — JS functions)
  * ──────────────────────────────────────────────────────────────────
  *
  * AUTOMATION
@@ -37,7 +77,7 @@
  * SCRAPING
  *   (none yet — add to scraping/ folder)
  *
- * WEB
+ * WEB (JS utilities)
  *   initScrollReveal      — Scroll-triggered animations with stagger (IntersectionObserver)
  *   animateCounter        — Animate a number from 0 to target with ease-out cubic
  *   initCounters          — Set up scroll-triggered counters across the page
@@ -55,6 +95,14 @@
  *   showError             — Inject inline error message below a form field
  *   clearErrors           — Remove all inline errors from a form
  *   initLiveValidation    — Clear field errors as user types/selects
+ *
+ * WEB KNOWLEDGE (web/verticals/ — markdown reference files)
+ *   education.md       — Preschool, K-12, E-learning website patterns
+ *   medical.md         — Clinic, Dental, Hospital website patterns
+ *   corporate.md       — Agency, IT, Consulting, SaaS website patterns
+ *   small-business.md  — Restaurant, Salon, Local Services website patterns
+ *   universal-tech.md  — Fonts, colors, CDN libs, WCAG across all verticals
+ *   template-library.md — Build playbook: folder structure, HTML shell, CSS vars
  *
  * AI
  *   whatsappOutreach    — Cold WhatsApp message prompt for local business outreach
