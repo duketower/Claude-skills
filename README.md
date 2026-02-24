@@ -96,5 +96,3 @@ claude-skills/
 | Data Scraping | `scraping/`, `utils/` |
 
 ---
-
-*Built with Claude Code. Single source of truth on GitHub.*
