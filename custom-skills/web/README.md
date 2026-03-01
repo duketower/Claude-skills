@@ -33,7 +33,35 @@ const data = await fetchWithRetry('/api/users', {
 });
 ```
 
-## Source Project
+## Available JS Skills
 
-Full website implementations live in:
-`/Users/anurag/Documents/Claude Projects/Website Startup/`
+| File | Description |
+|------|-------------|
+| `navbarUtils.js` | Sticky navbar + hamburger menu toggle |
+| `smoothScroll.js` | Anchor link smooth scrolling with offset |
+| `scrollReveal.js` | Scroll-triggered animations (IntersectionObserver) |
+| `faqAccordion.js` | Accessible FAQ accordion, one open at a time |
+| `formValidation.js` | Inline form validation with error messages |
+| `beforeAfterSlider.js` | Before/after image comparison slider |
+| `animateCounter.js` | Number counter animation from 0 to target |
+| `animateNumber.js` | Animate between two values instantly |
+| `portfolioFilter.js` | Gallery/portfolio filtering by data-category |
+| `lightbox.js` | Fullscreen image lightbox with keyboard nav |
+
+## Industry Vertical Knowledge Base
+
+`verticals/` — Research-backed documentation for building websites in specific industries:
+
+| Vertical | File |
+|----------|------|
+| Schools, Preschools, E-learning | `verticals/education.md` |
+| Clinics, Hospitals, Dental | `verticals/medical.md` |
+| Agencies, IT Companies, SaaS | `verticals/corporate.md` |
+| Restaurants, Salons, Local Services | `verticals/small-business.md` |
+| Universal patterns (fonts, colors, CDN libs, WCAG) | `verticals/universal-tech.md` |
+| Build playbook (HTML shell, CSS vars, folder structure) | `verticals/template-library.md` |
+
+## Source Projects
+
+- JS skills: `/Users/anurag/Documents/Claude Projects/PreSchool Website Builder/shared/js/`
+- Website templates: `/Users/anurag/Documents/Claude Projects/PreSchool Website Builder/templates/`
